@@ -89,3 +89,24 @@ label {
     color: #294f50;
     background: #fff;
 }
+
+
+input:focus {
+    border-color: #294f50;
+    box-shadow: 0 0 5px rgba(41, 79, 80, 0.5);
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form {
+  animation: fadeSlideUp 1s ease forwards;
+}
